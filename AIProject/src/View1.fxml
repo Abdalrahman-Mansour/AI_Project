@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxWidth="410.0" minWidth="386.0" prefHeight="600.0" prefWidth="386.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="233.0" text="Select a search algorithm">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="algorithmTypes" layoutX="64.0" layoutY="290.0" onAction="#progress" prefHeight="38.0" prefWidth="258.0" promptText="Search Algorithm Type" styleClass="button">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+                  <ProgressBar fx:id="progress" layoutX="93.0" layoutY="407.0" prefHeight="34.0" prefWidth="200.0" progress="0.0" style="-fx-border-width: 5;" stylesheets="@application.css" />
+                  <Button fx:id="search" layoutX="124.0" layoutY="395.0" mnemonicParsing="false" onAction="#search" prefHeight="59.0" prefWidth="138.0" text="Search" visible="false">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="clear" layoutX="22.0" layoutY="538.0" mnemonicParsing="false" onAction="#clear" prefHeight="41.0" prefWidth="70.0" text="Clear" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="136.0" fitWidth="306.0" layoutX="40.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@weDeliver.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Separator orientation="VERTICAL" prefHeight="600.0" prefWidth="0.0" />
+            <AnchorPane prefHeight="550.0" prefWidth="506.0">
+               <children>
+                  <Line endX="92.10003662109375" endY="-48.0" layoutX="177.0" layoutY="385.0" startX="61.600006103515625" startY="2.4000244140625" styleClass="line" />
+                  <Line endX="302.9999694824219" endY="390.79998779296875" layoutX="-24.0" layoutY="36.0" startX="264.1999816894531" startY="351.4000244140625" styleClass="line" />
+                  <Line endX="340.1999816894531" endY="161.8000030517578" layoutX="-24.0" layoutY="11.0" startX="273.9999694824219" startY="148.8000030517578" styleClass="line" />
+                  <Line endX="295.5" endY="209.79998779296875" layoutX="-24.0" layoutY="36.0" startX="341.9999694824219" startY="138.8000030517578" styleClass="line" />
+                  <Line endX="294.70001220703125" endY="211.39999389648438" layoutX="-24.0" layoutY="36.0" startX="266.9999694824219" startY="165.8000030517578" styleClass="line" />
+                  <Line endX="273.9999694824219" endY="123.80000305175781" layoutX="-24.0" layoutY="36.0" startX="266.9999694824219" startY="165.8000030517578" styleClass="line" />
+                  <Line endX="293.9000244140625" endY="209.0" layoutX="-24.0" layoutY="36.0" startX="243.5" startY="240.20001220703125" styleClass="line" />
+                  <Line endX="293.9000244140625" endY="300.20001220703125" layoutX="-24.0" layoutY="36.0" startX="242.49288940429688" startY="241.0" styleClass="line" />
+                  <Line endX="268.29998779296875" endY="191.39999389648438" layoutX="-24.0" layoutY="11.0" startX="188.19998168945312" startY="152.99998474121094" styleClass="line" />
+                  <Line endX="295.5" endY="209.0" layoutX="-24.0" layoutY="36.0" startX="177.80001831054688" startY="184.1999969482422" styleClass="line" />
+                  <Line endX="293.10003662109375" endY="301.79998779296875" layoutX="-24.0" layoutY="36.0" startX="164.19998168945312" startY="279.4000244140625" styleClass="line" />
+                  <Line endX="432.1999816894531" endY="330.6000061035156" layoutX="-24.0" layoutY="36.0" startX="292.0928649902344" startY="301.0" styleClass="line" />
+                  <Line endX="302.9999694824219" endY="390.79998779296875" layoutX="-24.0" layoutY="36.0" startX="302.9999694824219" startY="449.0" styleClass="line" />
+                  <Line endX="306.6000061035156" endY="450.60003662109375" layoutX="-24.0" layoutY="36.0" startX="274.6000061035156" startY="474.60003662109375" styleClass="line" />
+                  <Line endX="200.29998779296875" endY="43.80000305175781" layoutX="-14.0" layoutY="21.0" startX="150.49288940429688" startY="70.19999694824219" styleClass="line" />
+                  <Line endX="282.9999694824219" endY="370.79998779296875" layoutX="-4.0" layoutY="56.0" startX="413.8000183105469" startY="310.6000061035156" styleClass="line" />
+                  <Line endX="225.39999389648438" endY="66.99998474121094" layoutX="6.0" layoutY="41.0" startX="243.99996948242188" startY="118.80000305175781" styleClass="line" />
+                  <Line endX="129.78579711914062" endY="50.90708923339844" layoutX="6.0" layoutY="41.0" startX="224.69290161132812" startY="66.29286193847656" styleClass="line" />
+                  <Line endX="133.39999389648438" endY="249.4000244140625" layoutX="6.0" layoutY="66.0" startX="231.99996948242188" startY="321.79998779296875" styleClass="line" />
+                  <Line endX="47.185760498046875" endY="202.20001220703125" layoutX="6.0" layoutY="66.0" startX="134.19998168945312" startY="249.4000244140625" styleClass="line" />
+                  <Line endX="272.9999694824219" endY="360.79998779296875" layoutX="6.0" layoutY="66.0" startX="294.1999816894531" startY="393.4000244140625" styleClass="line" />
+                  <Line endX="294.9999694824219" endY="395.0" layoutX="6.0" layoutY="66.0" startX="274.9999694824219" startY="418.20001220703125" styleClass="line" />
+                  <Line endX="48.600006103515625" endY="199.80001831054688" layoutX="6.0" layoutY="66.0" startX="145.39999389648438" startY="151.8000030517578" styleClass="line" />
+                  <Line endX="263.8071594238281" endY="270.29290771484375" layoutX="6.0" layoutY="66.0" startX="266.1999816894531" startY="179.80001831054688" styleClass="line" />
+                  <Line endX="130.19998168945312" endY="51.80000305175781" layoutX="6.0" layoutY="41.0" startX="243.99996948242188" startY="118.80000305175781" styleClass="line" />
+                  <Line endX="181.39999389648438" endY="24.599990844726562" layoutX="6.0" layoutY="41.0" startX="286.9999694824219" startY="13.800003051757812" styleClass="line" />
+                  <Line endX="215.39999389648438" endY="56.99995422363281" layoutX="16.0" layoutY="51.0" startX="276.9999694824219" startY="3.8000030517578125" styleClass="line" />
+                  <Line endX="423.9999694824219" endY="320.8000183105469" layoutX="-14.0" layoutY="46.0" startX="287.8000183105469" startY="199.80001831054688" styleClass="line" />
+                  <Label fx:id="bethlehemLabel" layoutX="295.0" layoutY="419.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Bethlehem">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="bethlehemRadio" layoutX="271.0" layoutY="418.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="ramallahLabel" layoutX="282.0" layoutY="316.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Ramallah">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="ramallahRadio" alignment="CENTER_RIGHT" layoutX="261.0" layoutY="323.0" mnemonicParsing="false" onAction="#selectRadio" prefHeight="22.0" prefWidth="20.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="jeninLabel" layoutX="265.0" layoutY="142.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Jenin">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="jeninRadio" layoutX="242.0" layoutY="151.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="jerusalemLabel" layoutX="252.0" layoutY="375.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Jerusalem">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="jerusalemRadio" layoutX="230.0" layoutY="379.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="nablusLabel" layoutX="286.0" layoutY="235.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Nablus">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="nablusRadio" layoutX="262.0" layoutY="236.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="hebronLabel" layoutX="294.0" layoutY="480.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Hebron">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="hebronRadio" layoutX="272.0" layoutY="477.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="tulkarmLabel" layoutX="112.0" layoutY="139.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Tulkarm">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="tulkarmRadio" layoutX="156.0" layoutY="157.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="qalqilyaLabel" layoutX="101.0" layoutY="190.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Qalqilya">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="qalqilyaRadio" layoutX="145.0" layoutY="209.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="nazarethLabel" layoutX="247.0" layoutY="108.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Nazareth">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="nazarethRadio" alignment="CENTER_RIGHT" layoutX="224.0" layoutY="100.0" mnemonicParsing="false" onAction="#selectRadio" prefHeight="18.0" prefWidth="23.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="salfitLabel" layoutX="170.0" layoutY="265.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Salfit">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="salfitRadio" layoutX="211.0" layoutY="268.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="duraLabel" layoutX="227.0" layoutY="482.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Dura">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="duraRadio" layoutX="240.0" layoutY="503.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="ramlehLabel" layoutX="97.0" layoutY="324.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Ramleh">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="ramlehRadio" alignment="CENTER_RIGHT" layoutX="130.0" layoutY="307.0" mnemonicParsing="false" onAction="#selectRadio" prefHeight="18.0" prefWidth="21.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="haifaLabel" layoutX="85.0" layoutY="80.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Haifa">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="haifaRadio" layoutX="127.0" layoutY="84.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="yafaLabel" layoutX="70.0" layoutY="257.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Yafa">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="yafaRadio" layoutX="45.0" layoutY="259.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="akaLabel" layoutX="165.0" layoutY="35.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Aka">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="akaRadio" layoutX="178.0" layoutY="55.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="halhoulLabel" layoutX="314.0" layoutY="452.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Halhoul">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="halhoulRadio" layoutX="290.0" layoutY="450.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="sabastiaLabel" layoutX="188.0" layoutY="208.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Sabastia">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="sabastiaRadio" layoutX="235.0" layoutY="193.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="tubasLabel" layoutX="329.0" layoutY="162.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Tubas">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="tubasRadio" layoutX="310.0" layoutY="166.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="safadLabel" layoutX="307.0" layoutY="44.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Safad" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="safadRadio" layoutX="285.0" layoutY="46.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Label fx:id="jerichoLabel" layoutX="396.0" layoutY="334.0" onMousePressed="#pressLabel" style="-fx-text-fill: white;" text="Jericho">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <RadioButton fx:id="jerichoRadio" layoutX="402.0" layoutY="358.0" mnemonicParsing="false" onAction="#selectRadio">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></RadioButton>
+                  <Button fx:id="save" layoutX="382.0" layoutY="541.0" mnemonicParsing="false" onAction="#save" prefHeight="41.0" prefWidth="70.0" text="Save">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ToggleButton fx:id="startCities" layoutX="59.0" layoutY="538.0" mnemonicParsing="false" onAction="#change" prefHeight="47.0" prefWidth="160.0" selected="true" style="-fx-border-color: #663f3f; -fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 10; -fx-background-insets: 2;" text="Select Start Point" textFill="#f21b60">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="startOrGoals" />
+                     </toggleGroup>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ToggleButton>
+                  <ToggleButton fx:id="GoalCities" layoutX="218.0" layoutY="538.0" mnemonicParsing="false" onAction="#change" prefHeight="47.0" prefWidth="160.0" style="-fx-border-color: #663f3f; -fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 10; -fx-background-insets: 2;" text="Select Goals" textFill="#f21b60" toggleGroup="$startOrGoals">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ToggleButton>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
